@@ -1,8 +1,12 @@
-import { config, fields, collection } from '@keystatic/core';
+import { collection, config, fields } from '@keystatic/core'
 
 export default config({
   storage: {
     kind: 'local',
+    // repo: {
+    //   owner: "proxima812",
+    //   name: "keystatic-astro-test-site"
+    // },
   },
   collections: {
     posts: collection({
@@ -25,4 +29,4 @@ export default config({
       },
     }),
   },
-});
+})
