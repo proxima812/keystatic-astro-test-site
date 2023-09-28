@@ -2,11 +2,11 @@ import { collection, config, fields } from '@keystatic/core'
 
 export default config({
   storage: {
-    kind: 'local',
-    // repo: {
-    //   owner: "proxima812",
-    //   name: "keystatic-astro-test-site"
-    // },
+    kind: 'gitgub',
+    repo: {
+      owner: "proxima812",
+      name: "keystatic-astro-test-site"
+    },
   },
   collections: {
     posts: collection({
